@@ -1,0 +1,126 @@
+html,body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    height: 78px;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 7px 0;
+}
+
+section {
+    margin: 2px 0;
+}
+
+h2 {
+    color:grey;
+    text-align: center;
+    border-bottom: 2px solid black ; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;    
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-image {
+    max-width: 200px;
+    height: 250px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white; /* Add a border for decoration */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image:hover{
+border: 2px solid cyan;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border: 1px solid #fff;
+    
+}
+.contact-info:hover {
+    /* border: 1px solid cyan; */
+    box-shadow: 0 0px 0px 0 aqua, 0 0px 8px 0 aqua;
+    transition: all 1s;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: 1.1rem;
+}
+a:hover{
+    color:purple;
+    text-decoration: underline;
+}
+
+.footer{
+height: 100%;
+width: 100%;
+    background-color: black;
+    color: #f8f8f8;
+    
+     font-style: italic;
+    padding: 10px;
+    font-size: 0.9rem;
+    bottom: 0;
+     
+}
+footer p{
+     text-align: center;
+
+}
+
+/* *****media queries*** */
+@media only screen and (max-width: 600px) {
+    
+    .profile-image {
+        /* Adjust style for small screens */
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
